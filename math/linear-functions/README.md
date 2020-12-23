@@ -12,7 +12,7 @@ So what does this look like in practice? Consider how degrees celsius and degres
 
 ## Graphing the releationships
 
-<img src="f_from_c.png" alt="°C to °F" width="366" />
+![°C -> °F](f_from_c.png =366x)
 ![in -> cm](cm_from_in.png)
 
 In both of these graphs, there's a number line along the bottom called the **x-axis**, and another number line running up the side called the **y-axis**. Traditionally, the x-axis is used for the number you're putting into the formula (the **independent variable**) and the y-axis is used for the number you're getting out of the formula (the **dependent variable**, so-called because it depends on the independent variable). The first graph plots the formula for going from °C to °F. You can see that at 100°C on the x-axis, the line is just above 200 on the y-axis. In fact, it's at 212°F, the boiling point of water.
