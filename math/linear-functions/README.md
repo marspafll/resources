@@ -45,9 +45,9 @@ After you watch the video, take a look at the FLL 2020-2021 rulebook for the Rep
 
 One way to exactly define a line besides giving the formula is to list just two points. The freezing and boiling points of water discussed above are sufficient to work out the formula for the line that passes through both points. Slope is rise over run, so you just subtract the y values and divide that by the difference in the x values. So in this case, (212 - 32) / (100 - 0) = 180 / 100. You can simplify a fraction by dividing the numerator and denominator by the same number. 180 / 20 = 9 and 100 / 20 = 5, so the slope simplifies to 9/5. Once you have the slope, you can substitute it for m in the y=mx+b formula, so y=9x/5+b. Now, to get the y intercept, _b_, plug in either of the 2 points for x and y. I'll be plugging in (100, 212).
 
-  212=9*100/5+b
-  212=180+b
-  212-180=b
-  32=b
+* 212=9*100/5+b
+* 212=180+b
+* 212-180=b
+* 32=b
 
 So the formula is y=9x/5+32. But sometimes it's just handed to you: one of the points in this case happens to be (0, 32), so 32 is the y intercept by definition.
