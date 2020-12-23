@@ -51,3 +51,9 @@ One way to exactly define a line besides giving the formula is to list just two 
 * 32=b
 
 So the formula is y=9x/5+32. But sometimes it's just handed to you: one of the points in this case happens to be (0, 32), so 32 is the y intercept by definition.
+
+## Applications in Robotics
+
+To move a forklift in terms of percent of the way up within its range of motion, it must first find the number of degrees that the motor stalls out at after lowering the forklift as much as possible (the lower limit of travel) and likewise for raising it (upper limit). That gives us two points (0, lower limit) and (100, upper limit). From that, a formula can easily be worked out to convert from percentage to degrees. It's especially easy because on of the points gives the y intercept directly. So it's `degrees = (upper - lower) * percentage / 100 + lower`.
+
+A proportional line follower is `steering_input = error * proportional_gain`. It's called proportional because steering input is directly proportional to error. But you could also write it in terms of light sensor reading, which would make it linear, but not proportional: `steering_input = (reading - target_value) * proportinal_gain`.
