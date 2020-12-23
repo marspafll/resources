@@ -21,6 +21,8 @@ So what does this look like in practice? Consider how degrees celsius and degres
 
 <img src="cm_from_in.png" alt="in -&gt; cm" width="506" />
 
+There's a great free online graphing calculator called Desmos. I used it to create the images above. You can find it [here](https://www.desmos.com/calculator).
+
 In both of these graphs, there's a number line along the bottom called the **x-axis**, and another number line running up the side called the **y-axis**. Traditionally, the x-axis is used for the number you're putting into the formula (the **independent variable**) and the y-axis is used for the number you're getting out of the formula (the **dependent variable**, so-called because it depends on the independent variable). The first graph plots the formula for going from °C to °F. You can see that at 100°C on the x-axis, the line is just above 200 on the y-axis. In fact, it's at 212°F, the boiling point of water.
 
 Any point within the graph can be denoted by its coordinates, written as an ordered pair of numbers in parentheses, with the x value listed first. So the boiling point of water is (100, 212) and the freezing point is (0, 32). The point where the x-axis and they y-axis cross, (0, 0) is called the **origin**. Notice that the graph of the line for the formula to convert from inches to centimeters intersects the origin. That's another way to see that inches are proportional to centimeters. On the temperature graph, the freezing point happens to be where the line crosses the y-axis. The word for where a line crosses the y-axis is the **y intercept**.
@@ -28,8 +30,6 @@ Any point within the graph can be denoted by its coordinates, written as an orde
 Another property of lines is their **slope**, or steepness. The larger of a number you multiply by, the steeper the line will be. Slope is the fraction of rise / run. Rise is the change in y; run is the change in x. So the temperature slope of 9/5 means that for every increase of 5°C, there's an increase of 9°F. 2.54 expressed as a fraction is 127/50, so for every 50 inches, there are exactly 127 centimeters, which is also their proportion.
 
 The most common way you'll see linear formulas written is called **slope-intercept form**: _y=mx+b_ where m is the slope and b is the y-intercept. Notice that the formula for converting °C to °F is already in slope-intercept form.
-
-There's a great free online graphing calculator called Desmos. You can find it [here](https://www.desmos.com/calculator).
 
 ## Lines From Points
 
