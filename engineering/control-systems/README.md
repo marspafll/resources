@@ -73,9 +73,9 @@ The really tricky part of using a PID is tuning it properly. The most accurate t
 6. This [forum discussion](https://forum.pololu.com/t/questions-about-pid-actually-pd-tuning/3263) talks about how to tune a PD line controller. They're working with robots that aren't EV3s, but most of the same techniques still apply.
 7. If you have a good way of logging error and output values on each iteration of a loop, you might be able to use [this tool](https://pidtuner.com/) to help you tune a controller.
 8. This is an [academic paper](https://www.researchgate.net/publication/283347335_Optimization_of_PID_Control_for_High_Speed_Line_Tracking_Robots) about going beyond PIDs to handle special cases that arise with line followers. The math formulas are advanced, but the implementation of the ideas need not be that complicated.
-  1. Start by tuning the proportional gain of a PID controller
-  2. Add derivative tuning to dampen the oscillations
-  3. Add in a little bit of integral control so that persistent error doesn't cause problems in the P and D control
-  4. Manage integral windup by only looking at the sum of the 10 most recent error values for the integral control
-  5. Use the sum of the absolute values of the 10 most recent error values and an additional gain factor to slow down the forward drive speed in turns
-  6. Handle the special case when the line is lost completely by stopping all forward drive and rotating in place until the line is reacquired.
+    1. Start by tuning the proportional gain of a PID controller
+    2. Add derivative tuning to dampen the oscillations
+    3. Add in a little bit of integral control so that persistent error doesn't cause problems in the P and D control
+    4. Manage integral windup by only looking at the sum of the 10 most recent error values for the integral control
+    5. Use the sum of the absolute values of the 10 most recent error values and an additional gain factor to slow down the forward drive speed in turns
+    6. Handle the special case when the line is lost completely by stopping all forward drive and rotating in place until the line is reacquired.
