@@ -11,3 +11,8 @@
 
 * Programming
   * [Object-Oriented](./programming/object-oriented)
+  * [Documentation](./programming/documentation)
+* Math
+  * [Linear Functions](./math/linear-functions)
+* Engineering
+  * [Control Systems](./engineering/control-systems)
