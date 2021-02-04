@@ -59,6 +59,16 @@ So what does adding up the area under the curve look like in robotics code? Just
 
 <img src="integral_samples.jpeg" alt="sum the error values" />
 
+### Integral Windup
+
+One thing to consider when using integral control is what happens when the error is large for a long time. In that case the integral sum will build up to a very large value, and the control system will need to spend a lot of time unwinding it, meaning that it overcorrects for a long time. There are a few strategies for dealing with integral windup.
+
+1. Only accumulate error values within a certain range of 0. In particular, stop accumulating when the error reading is **saturated**. In the case of a line follower, saturation means reading fully white.
+2. Limit how far into the past the running sum looks. There are a couple of ways to do this.
+    1. Use a ring buffer to keep a finite number of previous samples. As a sample is added to the buffer, add it to the sum; as a sample falls off, remove it from the sum.
+    2. Before adding each new error value to the running sum, multiply the running sum by some number between 0 and 1. This is called **decay**. The older a sample gets, the less influence it has on the sum. For example, if the decay factor is 0.9, the 10th most recent sample will only count 35% as much as it originally did.
+3. Zero out the running sum whenever the error value "crosses the zero". If the current error value is positive and the previous error value is negative (or vice versa), set the running sum to 0. This doesn't prevent windup, but it does mitigate the unwind time.
+
 ### Tuning
 
 The really tricky part of using a PID is tuning it properly. The most accurate tuning methods depend on having a mathematical model of the system and how it responds to inputs. But that approach isn't always possible, especially when you don't know college-level math yet. Fortunately, there are also trial-and-error techniques for tuning PIDs too. Here's the basic process:
