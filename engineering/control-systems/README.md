@@ -45,6 +45,20 @@ The term **derivative** comes from calculus. Just as lines have slopes, curves c
 
 The reason we're interested in the steepness of the slope is it lets us predict the future. A slope points in the direction that a trend is headed. If the error is rapidly heading toward zero, we want to start reducing the steering input before it crosses zero. Crossing zero error is called **overshoot**.
 
+#### Derivative Chatter
+
+Sometimes the sensor from which the error value is derived is subject to noise in its readings. The noise will typically be higher in frequency than the true changes in the process value. The high-frequency noise causes rapid changes in the derivative term, particularly if a lot of derivative gain is used. These high frequency changes, in turn, show up in the process output, and that's what's called **chatter**. The way to filter out high-frequency noise in a signal is to apply a low-pass filter. The downside of low pass filters is they reduce responsiveness a little bit, so to mitigate that, the trick is to apply the low-pass filter somewhere that it's *only* going to affect the derivative term, leaving the proportional term to respond rapidly. The derivative term is the one most sensitive to small changes.
+
+Here's what a simple low-pass filter looks like in Python. The variable *r* is a smoothing factor in the range 0.0-1.0; smaller values give more smoothing
+```python
+previous_deviation = 0
+while True:
+  deviation = sensor_reading - set_point
+  raw_derivative = deviation - previous_deviation
+  filtered_derivative = (1-r)*filtered_deriv + r*raw_deriv
+  previous_deviation = deviation
+```
+
 ### Integral
 
 The integral component of PID controllers isn't usually very important for line followers, though it does come into play when turning a motor encoder to a specific target angle. As the error gets closer to zero, the amount of force coming from proportional control decreases to a point where it may never actually make it all the way to the target. Integral control is there to address error that persists over time. It particularly comes into play when there's a constant force, like gravity, acting on the system. Imagine a motor trying to keep an arm held out horizontally. Gravity keeps wanting to pull the arm down, and the motor has to apply an opposite force to get it to where it's supposed to be and keep it there. Gravity isn't the only force that can persistently act against a controlled system. Heat loss when you're trying to maintain a stable temperature is another example. Line followers that use proportional and derivative control with little if any integral are unusual when it comes to PID controllers in general. Most other controllers end up using primarily proportional and integral control, with little if any derivative control.
@@ -96,3 +110,4 @@ The really tricky part of using a PID is tuning it properly. The most accurate t
     4. Manage integral windup by only looking at the sum of the 10 most recent error values for the integral control
     5. Use the sum of the absolute values of the 10 most recent error values and an additional gain factor to slow down the forward drive speed in turns
     6. Handle the special case when the line is lost completely by stopping all forward drive and rotating in place until the line is reacquired.
+10. This shows the mathematical formula for a [Low Pass Filter for Derivative Control](https://ptolemy.berkeley.edu/projects/chess/tbd/wiki/C-code/LowPassFilterForDerivativeControl)
