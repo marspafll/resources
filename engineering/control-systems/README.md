@@ -111,3 +111,5 @@ The really tricky part of using a PID is tuning it properly. The most accurate t
     5. Use the sum of the absolute values of the 10 most recent error values and an additional gain factor to slow down the forward drive speed in turns
     6. Handle the special case when the line is lost completely by stopping all forward drive and rotating in place until the line is reacquired.
 10. This shows the mathematical formula for a [Low Pass Filter for Derivative Control](https://ptolemy.berkeley.edu/projects/chess/tbd/wiki/C-code/LowPassFilterForDerivativeControl)
+11. This shows some python code for [implementing a low-pass filter](https://tomroelandts.com/articles/low-pass-single-pole-iir-filter)
+12. This video walks through the problem of derivative chatter, and [why high-frequency noise messes up the slopes so much](https://www.mathworks.com/videos/understanding-pid-control-part-3-expanding-beyond-a-simple-derivative-1531120808026.html)
