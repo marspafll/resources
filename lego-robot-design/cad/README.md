@@ -4,11 +4,11 @@
 
 Working exclusively with physical LEGOs can be very limiting. Most of you only have access to the robotics and Technic parts when you come to FLL meetings on Sundays. Even then, parts are limited and it takes time to dig through the pieces and find the part you're looking for.
 
-What happens when it's time to clean up? Will you able to find your assembly again next week? If you can't make it to Robotics next week, will someone else find it, and not realizing it was something you were working on, take a part off of it that they need?
+What happens when it's time to clean up? Will you be able to find your assembly again next week? If you can't make it to Robotics next week, will someone else find it, and not realizing it was something you were working on, take a part off of it that they need?
 
 What about designs we want to save for a long time? Should we tie up valuable parts just so that we don't forget how a robot went together?
 
-One of our limitations as a community-based program that only meets once or twice a week is that we simply don't have the _time_ to work on our designs that home- or school-based team that can meet more often does. How can we work around that? Wouldn't it be nice to be able to email design drawings to your teammate, or even work on them together over Zoom?
+One of our limitations as a community-based program that only meets once or twice a week is that we simply don't have the _time_ to work on our designs that home- or school-based teams that can meet more often do. How can we work around that? Wouldn't it be nice to be able to email design drawings to your teammate, or even work on them together over Zoom?
 
 Drawing robot ideas by hand is an option, but it's not able to be very precise or detailed. Computer-aided design lets us explore ideas quickly, share them over email, preserve them on Git repositories, and spend our limited time with the LEGO pieces reifying ideas that we've already carefully considered and refined.
 
@@ -23,6 +23,8 @@ The computer can't really make sure your design will function as intended. What 
 ## Programs Used
 
 ### LDCad/LDraw
+
+#### Getting Started
 
 The best way to get started with [LDCad](http://www.melkert.net/LDCad) is to download the complete [LDraw All-In-One Installer](https://www.ldraw.org/article/104.html). This contains the software along with the parts models. The strength of this program is building LEGO components quickly. LDCad is available for Windows and Linux.
 
@@ -48,6 +50,10 @@ One of the first things you're going to want to do in LDCad is change the grid s
 Your model will look more realistic and be easier to understand if you apply the same colors as the parts we have in real life. You can either choose a color before taking a part from the library, or pick a color while you have a part selected, and then click on the larger color rectangle to apply it to the selected part.
 
 ![color picker](./colors.png)
+
+#### Learn more through YouTube
+
+Those are the bare basics, but if you're stuck, you might have more luck if you watch a video. Try [this one](https://www.youtube.com/watch?v=-vxM2vLiBRs) to start.
 
 ### Bricklink Studio
 
