@@ -35,8 +35,10 @@ One of the first things you're going to want to do in LDCad is change the grid s
 
 #### Find Parts
 
-1. The best way to find parts is to click on Library Sorted by Function, which looks like this ![parts](./parts.png)
-2. From there, you can choose Technic parts ![technic](./technic_parts.png)
+1. The best way to find parts is to click on Library Sorted by Function, which looks like this
+![parts](./parts.png)
+2. From there, you can choose Technic parts
+![technic](./technic_parts.png)
 
 #### Apply Colors
 

@@ -17,4 +17,4 @@
 * Engineering
   * [Control Systems](./engineering/control-systems)
 * [Robot Design](./lego-robot-design)
-  * [CAD](/.lego-robot-design/cad)
+  * [CAD](./lego-robot-design/cad)
