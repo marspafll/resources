@@ -24,10 +24,28 @@ The computer can't really make sure your design will function as intended. What 
 
 ### LDCad/LDraw
 
-The best way to get started with [LDCad](http://www.melkert.net/LDCad) is to download the complete [LDraw All-In-One Installer](https://www.ldraw.org/article/104.html). This contains the software along with the parts models. The strength of this program is building LEGO components quickly.
+The best way to get started with [LDCad](http://www.melkert.net/LDCad) is to download the complete [LDraw All-In-One Installer](https://www.ldraw.org/article/104.html). This contains the software along with the parts models. The strength of this program is building LEGO components quickly. LDCad is available for Windows and Linux.
+
+#### LDCad Setup
+
+One of the first things you're going to want to do in LDCad is change the grid stepping to 10-10-10-10. That works best for Technic. Other settings might work better for bricks.
+
+![go to grid stepping](./ldcad_grid_1.png)
+![choose grid stepping](./ldcad_grid_2.png)
+
+#### Find Parts
+
+1. The best way to find parts is to click on Library Sorted by Function, which looks like this ![parts](./parts.png)
+2. From there, you can choose Technic parts ![technic](./technic_parts.png)
+
+#### Apply Colors
+
+Your model will look more realistic and be easier to understand if you apply the same colors as the parts we have in real life. You can either choose a color before taking a part from the library, or pick a color while you have a part selected, and then click on the larger color rectangle to apply it to the selected part.
+
+![color picker](./colors.png)
 
 ### Bricklink Studio
 
-Bricklink Studio (sometimes styled stud.io) has great tools for generating build instructions with parts lists. It also does great ray-trace renderings, but they're very slow to generate. It is available [here](https://www.bricklink.com/v3/studio/download.page).
+Bricklink Studio (sometimes styled stud.io) has great tools for generating build instructions with parts lists. It also does great ray-trace renderings, but they're very slow to generate. It is available [here](https://www.bricklink.com/v3/studio/download.page). Studio is available for Windows and Mac OS.
 
 You can also do the initial designs in this program, but it works differently from LDCad. You'll have to experiment with it to decide whether you like it better or not.
