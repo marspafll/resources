@@ -1,4 +1,6 @@
-# Object-Oriented Programming
+# Mars Robotics FLL
+
+# Object-Oriented Programming in MicroPython
 
 By default, in Python, the functions you define are at the top level. A function can take parameters as input and return a result. It can even return multiple results as a comma-separated list called a tuple. A standalone function is a very useful way to encapsulate a series of steps that act on some input, but it has no memory of what it's done before. We call this property statelessness. Statelessness is not necessarily a bad thing.
 

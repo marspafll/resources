@@ -1,3 +1,5 @@
+# Mars Robotics FLL
+
 # Documenting Your Code
 
 Unless you have a trivially simple program, the code you write isn't nearly as useful in the long term as it could be if you don't document it. Documentation is there for any programmer who comes after you so that what you did can be understood. Remember, the programmer who comes after you to maintain the code will often be YOU. Code you wrote a year ago can be just as baffling as code written by somebody else.
